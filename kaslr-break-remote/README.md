@@ -1,3 +1,18 @@
+# Similar setup to the fingerprinting attack
+The attack was evaluated using a pistache HTTP server. 
+You can run the provided program in `../pistache_server_app` on your virtual machine.
+
+
+# Example run
+Based on pre-defined YAML configurations (see profiles folder) you can start the attack on your target host with one of the available (use the options to exploit an http or http2 server) strategies:
+
+`python attacker.py -c profiles/packet3/http.yaml attack-league -b 0 -e 511`
+
+A successful run should reveal the correct kernel text mapping.
+
+The results `results` folder contains successful runs to compare your results with.
+
+Check out the other available options:
 ```
 Usage: attacker.py [OPTIONS] COMMAND [ARGS]...
 

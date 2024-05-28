@@ -1,0 +1,14 @@
+host: REDACTED_IP
+port: 6666
+device: enp7s0
+http_version: http
+monitor_traffic: true
+kernel_text_mapping: '0xffffffffaa600000'
+pages:
+  - file: 'pages/0x2a44b.yaml'
+  - file: 'pages/0x2a460.yaml'
+  - file: 'pages/0x2a4e3.yaml'
+  - file: 'pages/0x2a4e5.yaml'
+  - file: 'pages/0x2a800.yaml'
+  - file: 'pages/0x2a804.yaml'
+  - file: 'pages/0x2a805.yaml'

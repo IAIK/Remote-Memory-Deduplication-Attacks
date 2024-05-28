@@ -1,0 +1,14 @@
+host: 147.75.100.61
+port: 8888
+device: enp7s0
+http_version: http2
+monitor_traffic: false
+kernel_text_mapping: '0xffffffff81c00000'
+pages:
+  - file: 'pages/0x6e4a.yaml'
+  - file: 'pages/0x6e60.yaml'
+  - file: 'pages/0x6ee3.yaml'
+  - file: 'pages/0x7241.yaml'
+  - file: 'pages/0x7242.yaml'
+  - file: 'pages/0x7243.yaml'
+  - file: 'pages/0x7244.yaml'

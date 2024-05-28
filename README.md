@@ -1,4 +1,8 @@
-# Attack Setup
+# Remote Memory-Deduplication Attacks
+This repository contains the proof-of-concept and result data for the work "Remote Memory Deduplication Attacks". 
+The related academic paper can be found [here](https://www.ndss-symposium.org/wp-content/uploads/2022-81-paper.pdf).
+
+## Attack Setup
 ```
 sudo ethtool -K enp7s0 tso off gso off gro off tx-gso-partial off
 ```
@@ -11,7 +15,7 @@ pip3 install -r requirements.txt
 ```
 
 
-# Victim Setup
+## Victim Setup
 On the victim device enable KSM - configure the memory deduplication (default is 100 pages_to_scan, with 200ms time interval). To get faster attacks and results tweak these parameters on a Linux machine.
 
 On Ubuntu 20.04, we observed that when qemu-system-common with KVM support is installed on a host machine, KSM_ENABLED is set to AUTO in /etc/default/qemu-kvm, enabling KSM per default for non-virtualized instances. Same setting for Ubuntu server.
@@ -25,3 +29,6 @@ echo 1 > /sys/kernel/mm/ksm/run
 
 On Windows you can activate PageCombining with `Enable-MMAgent -PageCombining`.
 Check the configuratoin with `Get-MMAgent`.
+
+## Attacks
+See the specific attack folders for the attack implementations.
