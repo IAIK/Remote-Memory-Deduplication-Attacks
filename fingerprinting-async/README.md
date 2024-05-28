@@ -2,7 +2,7 @@
 This project is a showcase how to use remote-memory deduplication attacks to fingerprint libraries.
 
 # Setup
-Use the provided nginx configuration, setup a VM running KVM and nginx and host the files provided in `php_server` with memory deduplication enabled.
+Use the provided nginx configuration, setup a VM running KVM, also enable the PHP memcached plugin and nginx and host the files provided in `php_server` with memory deduplication enabled. 
 
 
 # Running the proof-of-concept
