@@ -30,10 +30,8 @@ from IPython import embed
 STEP = (2*1024*1024)
 SLEEP_TIME = 4000000
 SLEEP_TIME = 10000000
-#SLEEP_TIME = 1000000
 
 ground_truth = []
-#mmap.mmap(-1, 4096, flags=mmap.MAP_PRIVATE, prot=mmap.PROT_READ|mmap.PROT_WRITE)
 page_content = None
 
 usleep = lambda x: time.sleep(x/1000000.0)
@@ -66,6 +64,7 @@ def print_update():
 
         df = measurements
         print(df)
+        # Uncomment to directly classify...
         #df = df.mask(df.sub(df.mean()).div(df.std()).abs().gt(2))
         #df = filter_outlier(df, 'Timestamp')
 
